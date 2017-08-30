@@ -21,9 +21,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>World Clock</h2>
         </div>
-        <Clock name="Atlanta" time={this.state.currentTime.toLocaleTimeString()} />
-        <Clock name="Boston" time={this.state.currentTime.toLocaleTimeString()} />
-        <Clock name="Chicago" time={this.state.currentTime.toLocaleTimeString()} />
+        <Clock name="Atlanta" time={this.state.currentTime.toLocaleTimeString("en-US", {timeZone: 'America/New_York'})} />
+        <Clock name="Los Angeles" time={this.state.currentTime.toLocaleTimeString("en-US", {timeZone: 'America/Los_Angeles'})} />
+        <Clock name="Chicago" time={this.state.currentTime.toLocaleTimeString("en-US", {timeZone: 'America/Chicago'})} />
       </div>
     );
   }
